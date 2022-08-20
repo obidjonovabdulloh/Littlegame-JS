@@ -16,7 +16,7 @@ document.querySelector("select").onchange = function () {
     }
     const ulElement = document.querySelector(".result-ul")
     const newElement = document.createElement("li")
-    ulElement.appendChild(newElement)
+    ulElement.prepend(newElement)
     newElement.textContent = " Siz - " + valus[randomLenght] + " :  Kompyuter - " + valus[randoms] + " = " + result
     this.selectedIndex = 0;
     newElement.classList.add("mb-3")
